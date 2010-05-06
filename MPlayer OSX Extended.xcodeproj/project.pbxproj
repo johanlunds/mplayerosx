@@ -189,6 +189,8 @@
 		3AFE25AD0EC110BF009FFEC5 /* fc_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE25AC0EC110BF009FFEC5 /* fc_pause.png */; };
 		3AFE25AF0EC11114009FFEC5 /* fc_pause_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE25AE0EC11114009FFEC5 /* fc_pause_on.png */; };
 		3AFE25BE0EC11307009FFEC5 /* fc_scrub_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE25BD0EC11307009FFEC5 /* fc_scrub_badge.png */; };
+		7DE609541192418B003BBD9F /* skipLeftTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE609521192418B003BBD9F /* skipLeftTemplate.png */; };
+		7DE609551192418B003BBD9F /* skipRightTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DE609531192418B003BBD9F /* skipRightTemplate.png */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -428,6 +430,8 @@
 		3AFE25AC0EC110BF009FFEC5 /* fc_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fc_pause.png; path = Resources/Graphics/fc_pause.png; sourceTree = "<group>"; };
 		3AFE25AE0EC11114009FFEC5 /* fc_pause_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fc_pause_on.png; path = Resources/Graphics/fc_pause_on.png; sourceTree = "<group>"; };
 		3AFE25BD0EC11307009FFEC5 /* fc_scrub_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fc_scrub_badge.png; path = Resources/Graphics/fc_scrub_badge.png; sourceTree = "<group>"; };
+		7DE609521192418B003BBD9F /* skipLeftTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skipLeftTemplate.png; path = Resources/Graphics/skipLeftTemplate.png; sourceTree = "<group>"; };
+		7DE609531192418B003BBD9F /* skipRightTemplate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skipRightTemplate.png; path = Resources/Graphics/skipRightTemplate.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MPlayer OSX Extended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MPlayer OSX Extended.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -664,6 +668,8 @@
 		3A86AE4111073FCB00963C25 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				7DE609521192418B003BBD9F /* skipLeftTemplate.png */,
+				7DE609531192418B003BBD9F /* skipRightTemplate.png */,
 				3A7A64951109172700371851 /* options_off.png */,
 				3A7A64961109172700371851 /* options_on.png */,
 				3A7A608E1108A1A700371851 /* pl_volume3.png */,
@@ -951,6 +957,8 @@
 				3A7A60AD1108A1A700371851 /* pl_ffwd_button_off.png in Resources */,
 				3A7A64971109172700371851 /* options_off.png in Resources */,
 				3A7A64981109172700371851 /* options_on.png in Resources */,
+				7DE609541192418B003BBD9F /* skipLeftTemplate.png in Resources */,
+				7DE609551192418B003BBD9F /* skipRightTemplate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
