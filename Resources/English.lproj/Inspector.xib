@@ -21,10 +21,10 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="197"/>
 			<integer value="79"/>
 			<integer value="76"/>
 			<integer value="58"/>
-			<integer value="197"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -383,8 +383,8 @@
 						<reference key="NSSuperview" ref="897974986"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="735333255">
-							<int key="NSCellFlags">68288064</int>
-							<int key="NSCellFlags2">272761856</int>
+							<int key="NSCellFlags">67239488</int>
+							<int key="NSCellFlags2">272762880</int>
 							<string key="NSContents">/Volumes/Macintosh HD/</string>
 							<reference key="NSSupport" ref="26"/>
 							<reference key="NSControlView" ref="297831044"/>
@@ -435,8 +435,8 @@
 						<reference key="NSSuperview" ref="897974986"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="489185245">
-							<int key="NSCellFlags">68288064</int>
-							<int key="NSCellFlags2">272761856</int>
+							<int key="NSCellFlags">67239488</int>
+							<int key="NSCellFlags2">272762880</int>
 							<string key="NSContents">My_Movie_File.avi</string>
 							<reference key="NSSupport" ref="26"/>
 							<reference key="NSControlView" ref="979566952"/>
