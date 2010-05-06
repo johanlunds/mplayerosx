@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">10C540</string>
-		<string key="IBDocument.InterfaceBuilderVersion">740</string>
-		<string key="IBDocument.AppKitVersion">1038.25</string>
-		<string key="IBDocument.HIToolboxVersion">458.00</string>
+		<string key="IBDocument.SystemVersion">10D578</string>
+		<string key="IBDocument.InterfaceBuilderVersion">762</string>
+		<string key="IBDocument.AppKitVersion">1038.29</string>
+		<string key="IBDocument.HIToolboxVersion">460.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
@@ -15,14 +15,14 @@
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>740</string>
+				<string>762</string>
 				<string>1.2.5</string>
 			</object>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
 			<integer value="219"/>
+			<integer value="6"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -3075,9 +3075,9 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{14, 905}, {360, 240}}</string>
 					<boolean value="YES"/>
-					<string>{{401, 710}, {451, 100}}</string>
+					<string>{{401, 656}, {451, 100}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{401, 710}, {451, 100}}</string>
+					<string>{{401, 656}, {451, 100}}</string>
 					<boolean value="YES"/>
 					<string>FullscreenControlsView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3266,14 +3266,22 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<string>removeAudioPreset:</string>
 							<string>resetAudioEqualizer:</string>
 							<string>resetVideoEqualizer:</string>
+							<string>resetVideoEqualizerToDefaults:</string>
+							<string>setVideoValuesAsDefault:</string>
+							<string>toggleEnableAudioEqualizerByDefault:</string>
+							<string>toggleEnableVideoEqualizerByDefault:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>NSButton</string>
+							<string>NSMenuItem</string>
 							<string>id</string>
 							<string>NSSlider</string>
 							<string>NSPopUpButton</string>
-							<string>NSButton</string>
+							<string>NSMenuItem</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -3284,6 +3292,8 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>audioApplyButton</string>
 							<string>audioEqualizerWindow</string>
+							<string>enableAudioEqualizerByDefaultItem</string>
+							<string>enableVideoEqualizerByDefaultItem</string>
 							<string>presetNameField</string>
 							<string>presetNameView</string>
 							<string>presetSelectionPopUp</string>
@@ -3293,6 +3303,8 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSButton</string>
 							<string>NSWindow</string>
+							<string>NSMenuItem</string>
+							<string>NSMenuItem</string>
 							<string>NSTextField</string>
 							<string>NSView</string>
 							<string>NSPopUpButton</string>
@@ -3814,6 +3826,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<string>restartPlayback:</string>
 							<string>selectBinary:</string>
 							<string>selectNewScreenshotPath:</string>
+							<string>selectOutputDevice:</string>
 							<string>setChecksForUpdates:</string>
 							<string>switchView:</string>
 							<string>visitBinaryHomepage:</string>
@@ -3827,6 +3840,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<string>id</string>
 							<string>id</string>
 							<string>NSPopUpButton</string>
+							<string>NSPopUpButton</string>
 							<string>NSButton</string>
 							<string>NSToolbarItem</string>
 							<string>id</string>
@@ -3837,6 +3851,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>advancedView</string>
+							<string>audioDeviceMenu</string>
 							<string>audioView</string>
 							<string>binariesController</string>
 							<string>binariesTable</string>
@@ -3864,6 +3879,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSView</string>
+							<string>NSPopUpButton</string>
 							<string>NSView</string>
 							<string>NSDictionaryController</string>
 							<string>NSTableView</string>
@@ -3942,7 +3958,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 							<string>NSMenuItem</string>
 							<string>NSWindow</string>
 							<string>PlayerFullscreenWindow</string>
-							<string>id</string>
+							<string>PlayerController</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -4238,6 +4254,13 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="983266661">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">AppKit.framework/Headers/NSView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">ExceptionHandling.framework/Headers/NSExceptionHandler.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -4581,6 +4604,7 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
+		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
 			<integer value="1050" key="NS.object.0"/>
@@ -4592,5 +4616,88 @@ U2VlayAxMCBtaW51dGVzIGZvcndhcmQ</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<string key="IBDocument.LastKnownRelativeProjectPath">../../MPlayer OSX Extended.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>NSGoLeftTemplate</string>
+				<string>NSGoRightTemplate</string>
+				<string>NSMenuCheckmark</string>
+				<string>NSMenuMixedState</string>
+				<string>fc_aslider_icon</string>
+				<string>fc_aslider_icon_on</string>
+				<string>fc_audio</string>
+				<string>fc_audio_on</string>
+				<string>fc_fast_forward</string>
+				<string>fc_fast_forward_on</string>
+				<string>fc_fast_rewind</string>
+				<string>fc_fast_rewind_on</string>
+				<string>fc_fullscreen</string>
+				<string>fc_fullscreen_on</string>
+				<string>fc_play</string>
+				<string>fc_play_on</string>
+				<string>fc_scrub_bg</string>
+				<string>fc_skip_left</string>
+				<string>fc_skip_left_on</string>
+				<string>fc_skip_right</string>
+				<string>fc_skip_right_on</string>
+				<string>fc_subtitles</string>
+				<string>fc_subtitles_on</string>
+				<string>ffwd_button_off</string>
+				<string>ffwd_button_on</string>
+				<string>fs_off</string>
+				<string>fs_on</string>
+				<string>inset</string>
+				<string>options_off</string>
+				<string>options_on</string>
+				<string>pl_off</string>
+				<string>pl_on</string>
+				<string>play_button_off</string>
+				<string>play_button_on</string>
+				<string>rwd_button_off</string>
+				<string>rwd_button_on</string>
+				<string>volume3</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{9, 9}</string>
+				<string>{9, 9}</string>
+				<string>{9, 8}</string>
+				<string>{7, 2}</string>
+				<string>{12, 19}</string>
+				<string>{12, 19}</string>
+				<string>{30, 23}</string>
+				<string>{30, 23}</string>
+				<string>{29, 22}</string>
+				<string>{29, 22}</string>
+				<string>{29, 20}</string>
+				<string>{29, 20}</string>
+				<string>{30, 23}</string>
+				<string>{30, 23}</string>
+				<string>{27, 30}</string>
+				<string>{27, 30}</string>
+				<string>{388, 26}</string>
+				<string>{16, 20}</string>
+				<string>{16, 20}</string>
+				<string>{16, 20}</string>
+				<string>{16, 20}</string>
+				<string>{30, 23}</string>
+				<string>{30, 23}</string>
+				<string>{42, 19}</string>
+				<string>{42, 19}</string>
+				<string>{29, 19}</string>
+				<string>{29, 19}</string>
+				<string>{1, 1}</string>
+				<string>{32, 19}</string>
+				<string>{32, 19}</string>
+				<string>{28, 19}</string>
+				<string>{28, 19}</string>
+				<string>{43, 19}</string>
+				<string>{43, 19}</string>
+				<string>{42, 19}</string>
+				<string>{42, 19}</string>
+				<string>{18, 17}</string>
+			</object>
+		</object>
 	</data>
 </archive>
