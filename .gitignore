@@ -1,0 +1,12 @@
+# Specially for this project
+Sparkle.framework/
+Binaries/
+
+# For Xcode
+build/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+
