@@ -852,11 +852,16 @@ static NSArray* statusNames;
 		[self applyVolume];
 	
 	} else if ([keyPath isEqualToString:MPESubtitleScale] || [keyPath isEqualToString:MPESubtitleItemRelativeScale]) {
-		float sub_scale = [[change objectForKey:NSKeyValueChangeNewKey] floatValue];
-		if ([[playingItem prefs] objectForKey:MPESubtitleItemRelativeScale])
-			sub_scale *= [[playingItem prefs] floatForKey:MPESubtitleItemRelativeScale];
-		[self sendCommand:[NSString stringWithFormat:@"set_property sub_scale %f",sub_scale]];
-	
+		float subScale = [[change objectForKey:NSKeyValueChangeNewKey] floatValue];
+		
+		// multiply with value that wasn't changed
+		if ([keyPath isEqualToString:MPESubtitleScale] && [[playingItem prefs] objectForKey:MPESubtitleItemRelativeScale])
+			subScale *= [[playingItem prefs] floatForKey:MPESubtitleItemRelativeScale];
+		else if ([keyPath isEqualToString:MPESubtitleItemRelativeScale] && [[playingItem prefs] objectForKey:MPESubtitleScale])
+			subScale *= [[playingItem prefs] floatForKey:MPESubtitleScale];
+		
+		[self sendCommand:[NSString stringWithFormat:@"set_property sub_scale %f",subScale]];
+
 	} else if ([keyPath isEqualToString:MPEPlaybackSpeed]) {
 		float speed = [[change objectForKey:NSKeyValueChangeNewKey] floatValue];
 		[self sendCommand:[NSString stringWithFormat:@"speed_set %f",speed]
