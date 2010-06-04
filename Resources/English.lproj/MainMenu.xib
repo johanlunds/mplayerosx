@@ -729,6 +729,15 @@
 												<reference key="NSMixedImage" ref="280660191"/>
 												<int key="NSTag">200</int>
 											</object>
+											<object class="NSMenuItem" id="327165900">
+												<reference key="NSMenu" ref="528901534"/>
+												<string key="NSTitle">Fit Screen</string>
+												<string key="NSKeyEquiv">3</string>
+												<int key="NSKeyEquivModMask">1048576</int>
+												<int key="NSMnemonicLoc">2147483647</int>
+												<reference key="NSOnImage" ref="118746331"/>
+												<reference key="NSMixedImage" ref="280660191"/>
+											</object>
 											<object class="NSMenuItem" id="190163487">
 												<reference key="NSMenu" ref="528901534"/>
 												<string key="NSTitle">Full Screen</string>
@@ -3488,6 +3497,30 @@
 					</object>
 					<int key="connectionID">19608</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">fitScreen:</string>
+						<reference key="source" ref="847214199"/>
+						<reference key="destination" ref="327165900"/>
+					</object>
+					<int key="connectionID">19610</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: playerController.player.movieOpen</string>
+						<reference key="source" ref="327165900"/>
+						<reference key="destination" ref="700428315"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="327165900"/>
+							<reference key="NSDestination" ref="700428315"/>
+							<string key="NSLabel">enabled: playerController.player.movieOpen</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">playerController.player.movieOpen</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">19613</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -4518,6 +4551,7 @@
 							<reference ref="993460538"/>
 							<reference ref="434144637"/>
 							<reference ref="107923094"/>
+							<reference ref="327165900"/>
 						</object>
 						<reference key="parent" ref="911500836"/>
 					</object>
@@ -4986,6 +5020,11 @@
 						<reference key="object" ref="730552444"/>
 						<reference key="parent" ref="911038990"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">19609</int>
+						<reference key="object" ref="327165900"/>
+						<reference key="parent" ref="528901534"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -5311,6 +5350,7 @@
 					<string>19596.IBPluginDependency</string>
 					<string>19596.ImportedFromIB2</string>
 					<string>19605.IBPluginDependency</string>
+					<string>19609.IBPluginDependency</string>
 					<string>1983.IBPluginDependency</string>
 					<string>1983.ImportedFromIB2</string>
 					<string>1984.IBPluginDependency</string>
@@ -5488,7 +5528,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{531, 838}, {205, 163}}</string>
+					<string>{{531, 823}, {205, 163}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5682,7 +5722,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{454, 688}, {212, 313}}</string>
+					<string>{{454, 673}, {212, 313}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5739,6 +5779,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
@@ -5759,7 +5800,7 @@
 					<string>{{589, 798}, {221, 203}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{176, 1001}, {545, 20}}</string>
+					<string>{{176, 986}, {545, 20}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5770,7 +5811,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{736, 918}, {156, 83}}</string>
+					<string>{{736, 883}, {156, 103}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5861,7 +5902,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">19608</int>
+			<int key="maxID">19613</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5978,14 +6019,22 @@
 							<string>removeAudioPreset:</string>
 							<string>resetAudioEqualizer:</string>
 							<string>resetVideoEqualizer:</string>
+							<string>resetVideoEqualizerToDefaults:</string>
+							<string>setVideoValuesAsDefault:</string>
+							<string>toggleEnableAudioEqualizerByDefault:</string>
+							<string>toggleEnableVideoEqualizerByDefault:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>NSButton</string>
+							<string>NSMenuItem</string>
 							<string>id</string>
 							<string>NSSlider</string>
 							<string>NSPopUpButton</string>
-							<string>NSButton</string>
+							<string>NSMenuItem</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -5996,6 +6045,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>audioApplyButton</string>
 							<string>audioEqualizerWindow</string>
+							<string>enableAudioEqualizerByDefaultItem</string>
+							<string>enableVideoEqualizerByDefaultItem</string>
 							<string>presetNameField</string>
 							<string>presetNameView</string>
 							<string>presetSelectionPopUp</string>
@@ -6005,6 +6056,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSButton</string>
 							<string>NSWindow</string>
+							<string>NSMenuItem</string>
+							<string>NSMenuItem</string>
 							<string>NSTextField</string>
 							<string>NSView</string>
 							<string>NSPopUpButton</string>
@@ -6031,6 +6084,10 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">FullscreenControls</string>
 					<string key="superclassName">NSWindow</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">cycleTimeDisplayMode:</string>
+						<string key="NS.object.0">id</string>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
@@ -6054,7 +6111,7 @@
 							<string>id</string>
 							<string>TimestampTextField</string>
 							<string>id</string>
-							<string>id</string>
+							<string>PlayerFullscreenWindow</string>
 							<string>PlayerController</string>
 						</object>
 					</object>
@@ -6148,6 +6205,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addToPlaylist:</string>
 							<string>decreaseVolume:</string>
+							<string>fitScreen:</string>
 							<string>fullScreen:</string>
 							<string>increaseVolume:</string>
 							<string>muteVolume:</string>
@@ -6177,6 +6235,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
@@ -6602,6 +6661,7 @@
 							<string>restartPlayback:</string>
 							<string>selectBinary:</string>
 							<string>selectNewScreenshotPath:</string>
+							<string>selectOutputDevice:</string>
 							<string>setChecksForUpdates:</string>
 							<string>switchView:</string>
 							<string>visitBinaryHomepage:</string>
@@ -6615,6 +6675,7 @@
 							<string>id</string>
 							<string>id</string>
 							<string>NSPopUpButton</string>
+							<string>NSPopUpButton</string>
 							<string>NSButton</string>
 							<string>NSToolbarItem</string>
 							<string>id</string>
@@ -6625,6 +6686,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>advancedView</string>
+							<string>audioDeviceMenu</string>
 							<string>audioView</string>
 							<string>binariesController</string>
 							<string>binariesTable</string>
@@ -6652,6 +6714,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSView</string>
+							<string>NSPopUpButton</string>
 							<string>NSView</string>
 							<string>NSDictionaryController</string>
 							<string>NSTableView</string>
@@ -6701,6 +6764,19 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">TimestampTextField</string>
 					<string key="superclassName">NSTextField</string>
+					<object class="NSMutableDictionary" key="actions">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>changeDisplayMode:</string>
+							<string>cycleDisplayMode:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Sources/Classes/TimestampTextField.h</string>
@@ -6725,7 +6801,7 @@
 							<string>NSMenuItem</string>
 							<string>NSWindow</string>
 							<string>PlayerFullscreenWindow</string>
-							<string>id</string>
+							<string>PlayerController</string>
 						</object>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
@@ -7042,6 +7118,13 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="315749278">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">AppKit.framework/Headers/NSView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">ExceptionHandling.framework/Headers/NSExceptionHandler.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -7406,6 +7489,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
+		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
 			<integer value="1050" key="NS.object.0"/>
@@ -7421,5 +7505,18 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<string key="IBDocument.LastKnownRelativeProjectPath">../../MPlayer OSX Extended.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
+		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>NSMenuCheckmark</string>
+				<string>NSMenuMixedState</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{9, 8}</string>
+				<string>{7, 2}</string>
+			</object>
+		</object>
 	</data>
 </archive>

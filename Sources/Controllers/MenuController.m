@@ -117,6 +117,11 @@
 																withValue:([sender tag]/100.0f)];
 }
 
+- (IBAction) fitScreen:(NSMenuItem *) sender
+{
+    [[[appController playerController] playerWindow] performZoom:NULL];
+}
+
 - (IBAction) fullScreen:(NSMenuItem *)sender
 {
 	[[appController playerController] switchFullscreen:sender];
