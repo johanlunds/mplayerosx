@@ -2,17 +2,17 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">10C540</string>
-		<string key="IBDocument.InterfaceBuilderVersion">740</string>
-		<string key="IBDocument.AppKitVersion">1038.25</string>
-		<string key="IBDocument.HIToolboxVersion">458.00</string>
+		<string key="IBDocument.SystemVersion">10D2094</string>
+		<string key="IBDocument.InterfaceBuilderVersion">762</string>
+		<string key="IBDocument.AppKitVersion">1038.29</string>
+		<string key="IBDocument.HIToolboxVersion">460.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">740</string>
+			<string key="NS.object.0">762</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="19219"/>
+			<integer value="5388"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -731,7 +731,7 @@
 											</object>
 											<object class="NSMenuItem" id="327165900">
 												<reference key="NSMenu" ref="528901534"/>
-												<string key="NSTitle">Fit Screen</string>
+												<string key="NSTitle">Fill Whole Screen</string>
 												<string key="NSKeyEquiv">3</string>
 												<int key="NSKeyEquivModMask">1048576</int>
 												<int key="NSMnemonicLoc">2147483647</int>
@@ -3498,14 +3498,6 @@
 					<int key="connectionID">19608</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">fitScreen:</string>
-						<reference key="source" ref="847214199"/>
-						<reference key="destination" ref="327165900"/>
-					</object>
-					<int key="connectionID">19610</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">enabled: playerController.player.movieOpen</string>
 						<reference key="source" ref="327165900"/>
@@ -3520,6 +3512,14 @@
 						</object>
 					</object>
 					<int key="connectionID">19613</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">fillWholeScreen:</string>
+						<reference key="source" ref="847214199"/>
+						<reference key="destination" ref="327165900"/>
+					</object>
+					<int key="connectionID">19614</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5811,7 +5811,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{736, 883}, {156, 103}}</string>
+					<string>{{736, 883}, {189, 103}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5902,7 +5902,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">19613</int>
+			<int key="maxID">19614</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6205,7 +6205,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>addToPlaylist:</string>
 							<string>decreaseVolume:</string>
-							<string>fitScreen:</string>
+							<string>fillWholeScreen:</string>
 							<string>fullScreen:</string>
 							<string>increaseVolume:</string>
 							<string>muteVolume:</string>

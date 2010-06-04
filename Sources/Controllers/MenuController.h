@@ -63,7 +63,7 @@ EqualizerController;
 
 // Movie Menu
 - (IBAction) setSizeFromMenu:(NSMenuItem *)sender;
-- (IBAction) fitScreen: (NSMenuItem *)sender;
+- (IBAction) fillWholeScreen: (NSMenuItem *)sender;
 - (IBAction) fullScreen:(NSMenuItem *)sender;
 
 - (IBAction) setVideoScaleMode:(NSMenuItem *)sender;
