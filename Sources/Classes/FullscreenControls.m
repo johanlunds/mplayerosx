@@ -41,6 +41,9 @@
     [result setBackgroundColor: [NSColor clearColor]];
     [result setAlphaValue:0.0];
     [result setOpaque:NO];
+    
+    // Set appropriate Spaces behavior
+    [result setCollectionBehavior:NSWindowCollectionBehaviorMoveToActiveSpace];
 	
 	// Enable shadow
     [result setHasShadow:YES];
