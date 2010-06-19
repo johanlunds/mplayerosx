@@ -2,17 +2,17 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1050</int>
-		<string key="IBDocument.SystemVersion">10D2094</string>
+		<string key="IBDocument.SystemVersion">10F569</string>
 		<string key="IBDocument.InterfaceBuilderVersion">762</string>
 		<string key="IBDocument.AppKitVersion">1038.29</string>
-		<string key="IBDocument.HIToolboxVersion">460.00</string>
+		<string key="IBDocument.HIToolboxVersion">461.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">762</string>
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="5388"/>
+			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1128,6 +1128,15 @@
 									<string key="NSTitle">Bring All to Front</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="118746331"/>
+									<reference key="NSMixedImage" ref="280660191"/>
+								</object>
+								<object class="NSMenuItem" id="183924379">
+									<reference key="NSMenu" ref="520000377"/>
+									<string key="NSTitle">Always on Top</string>
+									<string key="NSKeyEquiv">t</string>
+									<int key="NSKeyEquivModMask">1572864</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="118746331"/>
 									<reference key="NSMixedImage" ref="280660191"/>
@@ -3521,6 +3530,14 @@
 					</object>
 					<int key="connectionID">19614</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">toggleAlwaysOnTop:</string>
+						<reference key="source" ref="847214199"/>
+						<reference key="destination" ref="183924379"/>
+					</object>
+					<int key="connectionID">19616</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -3591,6 +3608,7 @@
 							<reference ref="338894191"/>
 							<reference ref="653841605"/>
 							<reference ref="291038551"/>
+							<reference ref="183924379"/>
 						</object>
 						<reference key="parent" ref="304889339"/>
 					</object>
@@ -5025,6 +5043,11 @@
 						<reference key="object" ref="327165900"/>
 						<reference key="parent" ref="528901534"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">19615</int>
+						<reference key="object" ref="183924379"/>
+						<reference key="parent" ref="520000377"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -5351,6 +5374,7 @@
 					<string>19596.ImportedFromIB2</string>
 					<string>19605.IBPluginDependency</string>
 					<string>19609.IBPluginDependency</string>
+					<string>19615.IBPluginDependency</string>
 					<string>1983.IBPluginDependency</string>
 					<string>1983.ImportedFromIB2</string>
 					<string>1984.IBPluginDependency</string>
@@ -5537,7 +5561,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{736, 718}, {156, 263}}</string>
+					<string>{{736, 703}, {156, 263}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5780,7 +5804,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5797,7 +5820,9 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{589, 798}, {221, 203}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<boolean value="YES"/>
+					<string>{{589, 763}, {221, 223}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>{{176, 986}, {545, 20}}</string>
@@ -5862,7 +5887,7 @@
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
-					<string>{{368, 808}, {211, 193}}</string>
+					<string>{{368, 793}, {211, 193}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -5902,7 +5927,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">19614</int>
+			<int key="maxID">19616</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6230,11 +6255,13 @@
 							<string>stepFrame:</string>
 							<string>stop:</string>
 							<string>takeScreenshot:</string>
+							<string>toggleAlwaysOnTop:</string>
 							<string>toggleLoop:</string>
 							<string>togglePlaylistWindow:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>

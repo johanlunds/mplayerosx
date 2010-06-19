@@ -204,5 +204,12 @@
 	[appController displayLogWindow:sender];
 }
 
+- (IBAction) toggleAlwaysOnTop:(NSMenuItem *)sender
+{
+    if (![[appController playerController] isFullscreen]) {
+        [sender setState:([sender state] == NSOffState) ? NSOnState : NSOffState];
+        [[[appController playerController] playerWindow] setLevel:([sender state] == NSOffState) ? NSNormalWindowLevel : NSFloatingWindowLevel];
+    }
+}
 
 @end
